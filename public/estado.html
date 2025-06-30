@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estado de la Casa | Light House</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="estado.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-solar-panel"></i>
+          <div>
+            <h1>Light House</h1>
+            <span>Universidad Continental</span>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="estado.html" class="active"><i class="fas fa-home"></i> Estado</a></li>
+            <li><a href="prediccion.html"><i class="fas fa-chart-line"></i> Predicción</a></li>
+            <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="dashboard-container">
+        <div class="profile-sidebar">
+          <div class="profile-header">
+            <img src="usuario.jpg" alt="Foto de perfil" class="profile-picture" />
+            <h2 class="profile-name">Oliver Siles</h2>
+            <p>Jr. Cajamarca 541, Huancayo</p>
+          </div>
+          <nav class="profile-nav">
+            <a href="usuario.html"><i class="fas fa-user"></i> Mi perfil</a>
+            <a href="estado.html" class="active"><i class="fas fa-home"></i> Estado de la casa</a>
+            <a href="prediccion.html"><i class="fas fa-chart-line"></i> Predicción de consumo</a>
+            <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto con proveedor</a>
+            <a href="configuracion.html"><i class="fas fa-cog"></i> Configuración</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+          </nav>
+        </div>
+
+        <div class="dashboard-content">
+          <div class="section-title">
+            <h2><i class="fas fa-home"></i> Estado de la Casa</h2>
+            <p>Monitoreo en tiempo real del consumo energético y dispositivos conectados</p>
+          </div>
+
+          <div class="status-cards">
+            <!-- Tarjetas de estado energético -->
+            <div class="status-card">
+              <h3><i class="fas fa-bolt"></i> Consumo Actual</h3>
+              <div class="status-value">1.2 kW</div>
+              <div class="status-description">Energía consumida en este momento</div>
+            </div>
+            <div class="status-card">
+              <h3><i class="fas fa-solar-panel"></i> Generación Solar</h3>
+              <div class="status-value">0.8 kW</div>
+              <div class="status-description">Energía generada por paneles</div>
+            </div>
+            <div class="status-card">
+              <h3><i class="fas fa-battery-three-quarters"></i> Batería</h3>
+              <div class="status-value">65%</div>
+              <div class="status-description">Capacidad almacenada</div>
+            </div>
+            <div class="status-card">
+              <h3><i class="fas fa-plug"></i> Red Eléctrica</h3>
+              <div class="status-value">0.4 kW</div>
+              <div class="status-description">Consumo de la red</div>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <h2><i class="fas fa-chart-line"></i> Consumo Energético</h2>
+            <p>Histórico de consumo de las últimas 24 horas</p>
+          </div>
+
+          <div class="energy-chart">
+            <div class="chart-placeholder">
+              <i class="fas fa-chart-pie" style="font-size: 3rem; color: #ddd; margin-bottom: 1rem;"></i>
+              <p>Gráfico de consumo se cargará aquí</p>
+            </div>
+          </div>
+
+          <div class="section-title" style="margin-top: 2rem;">
+            <h2><i class="fas fa-lightbulb"></i> Dispositivos Conectados</h2>
+            <p>Controla los dispositivos de tu hogar inteligente</p>
+          </div>
+
+          <div class="devices-grid">
+            <!-- Tarjetas de dispositivos -->
+            <div class="device-card">
+              <div class="device-icon"><i class="fas fa-lightbulb"></i></div>
+              <div class="device-name">Iluminación Principal</div>
+              <div class="device-status status-on">Encendido</div>
+              <label class="toggle-switch">
+                <input type="checkbox" checked />
+                <span class="slider"></span>
+              </label>
+            </div>
+            <!-- Puedes duplicar esta tarjeta para más dispositivos -->
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="configuracion-dispositivos.html" class="btn">
+              <i class="fas fa-cog"></i> Configurar Dispositivos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contacto">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Light House</h3>
+          <p>Plataforma desarrollada por la Universidad Continental para promover el uso de energías renovables.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Enlaces</h3>
+          <a href="index.html">Inicio</a>
+          <a href="calculadora.html">Calculadora</a>
+          <a href="proveedores.html">Proveedores</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+        <div class="footer-column">
+          <h3>Contacto</h3>
+          <div class="uc-address"><i class="fas fa-map-marker-alt"></i><p>Av. San Carlos 1980, Huancayo</p></div>
+          <div class="uc-address"><i class="fas fa-phone"></i><p>(064) 481430</p></div>
+          <div class="uc-address"><i class="fas fa-envelope"></i><p>energia.renovable@continental.edu.pe</p></div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Universidad Continental - Huancayo. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="estado.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+:root {
+    --gold: #D4AF37;
+    --dark-gold: #B8860B;
+    --light-gold: #F5D98F;
+    --gray: #333333;
+    --light-gray: #F5F5F5;
+    --blue: #1E90FF;
+    --white: #FFFFFF;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, var(--gray), #222222);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.login-container {
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    border: 1px solid var(--light-gold);
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.login-header {
+    background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid var(--blue);
+}
+
+.login-header i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.login-header h2 {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.login-body {
+    padding: 2rem;
+    color: var(--gray);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: var(--transition);
+    background-color: var(--light-gray);
+}
+
+.form-group input:focus {
+    border-color: var(--blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.2);
+}
+
+.form-group i {
+    position: absolute;
+    left: 1rem;
+    top: 2.5rem;
+    color: var(--gold);
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    background: linear-gradient(to right, var(--gold), var(--dark-gold));
+    color: var(--white);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, var(--dark-gold), var(--gold));
+    transform: translateY(-3px);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--blue);
+}
+
+.login-footer {
+    text-align: center;
+    padding: 1rem 2rem 2rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid var(--light-gray);
+}
+
+.login-footer a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.login-footer a:hover {
+    color: var(--gold);
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light-gray);
+    color: var(--gray);
+    transition: var(--transition);
+    border: 1px solid var(--light-gold);
+}
+
+.social-btn:hover {
+    background-color: var(--gold);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.uc-badge {
+    display: inline-block;
+    background-color: var(--blue);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+    }
+
+    .login-header {
+        padding: 1.5rem;
+    }
+
+    .login-body {
+        padding: 1.5rem;
+    }
+}

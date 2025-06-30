@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Perfil | Light House</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <i class="fas fa-solar-panel"></i>
+          <div>
+            <h1>Light House</h1>
+            <span id="brand-subtitle">Acceso energético inteligente</span>
+          </div>
+        </div>
+        <nav>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <main class="main">
+    <div class="container">
+      <div class="profile-container">
+        <div class="profile-sidebar">
+          <div class="profile-header">
+            <img src="usuario.jpg" alt="Foto de perfil" class="profile-picture">
+            <h2 class="profile-name">Oliver Siles Via y Rada Ale</h2>
+            <p class="profile-email">usuario@lighthouse.pe</p>
+            <span class="lh-badge" id="user-type">Cliente Light House</span>
+          </div>
+
+          <nav class="profile-nav">
+            <a href="usuario.html" id="nav-profile" class="active"><i class="fas fa-user"></i> Mi perfil</a>
+            <a href="estado.html" id="nav-status"><i class="fas fa-home"></i> Estado de casa</a>
+            <a href="prediccion.html" id="nav-prediction"><i class="fas fa-chart-line"></i> Predicción de consumo</a>
+            <a href="contacto.html" id="nav-contact"><i class="fas fa-envelope"></i> Contacto con proveedor</a>
+            <a href="configuracion.html" id="nav-settings"><i class="fas fa-cog"></i> Configuración</a>
+            <a href="#" id="nav-logout"><i class="fas fa-sign-out-alt"></i> Cerrar sesión</a>
+          </nav>
+
+          <div class="language-selector">
+            <button id="lang-btn-es" class="language-btn active" onclick="cambiarIdioma('es')">Español</button>
+            <button id="lang-btn-qu" class="language-btn" onclick="cambiarIdioma('qu')">Quechua</button>
+          </div>
+        </div>
+
+        <div class="profile-content">
+          <div class="section-title">
+            <h2 id="profile-title"><i class="fas fa-user-circle"></i> Información del Usuario</h2>
+          </div>
+
+            <div class="info-grid">
+              <div class="info-item">
+                <h3 id="nav-dni"><i class="fas fa-id-card"></i> DNI</h3>
+                <p>7487853</p>
+              </div>
+              <div class="info-item">
+                <h3 id="nav-email"><i class="fas fa-envelope"></i> Email</h3>
+                <p>usuario@lighthouse.pe</p>
+              </div>
+              <div class="info-item">
+                <h3 id="nav-dirección"><i class="fas fa-map-marker-alt"></i> Dirección</h3>
+                <p>Jr. Cajamarca 541, Huancayo, Junín</p>
+              </div>
+              <div class="info-item">
+                <h3 id="nav-telefono"><i class="fas fa-phone"></i> Teléfono</h3>
+                <p>+51 987 654 321</p>
+              </div>
+              <div class="info-item">
+                <h3 id="nav-registro"><i class="fas fa-calendar-alt"></i> Fecha de registro</h3>
+                <p>15 de marzo, 2023</p>
+              </div>
+              <div class="info-item">
+                <h3 id="nav-conexion"><i class="fas fa-bolt"></i> Tipo de conexión</h3>
+                <p>Solar híbrida <span class="lh-badge">Activa</span></p>
+              </div>
+            </div>
+
+          <div class="section-title" style="margin-top: 3rem;">
+            <h2><i class="fas fa-map-marked-alt"></i> Ubicación</h2>
+          </div>
+
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5689316724092!2d-75.21164408971494!3d-12.073152588116361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9651b975db1f%3A0xeb690782ff208eed!2sJr.%20Cajamarca%20541%2C%20Huancayo%2012003!5e0!3m2!1ses!2spe!4v1751235626600!5m2!1ses!2spe" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" r
+                    eferrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+            <a href="editar-perfil.html" class="btn" id="btn-edit">
+              <i class="fas fa-edit"></i> Editar perfil
+            </a>
+            <a href="configuracion.html" class="btn btn-outline" id="btn-settings">
+              <i class="fas fa-cog"></i> Configuración
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="contacto">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3 id="footer-title">Light House</h3>
+              <p id="footer-desc">...</p>
+
+              <h3 id="footer-links-title">Enlaces</h3>
+              <a id="footer-link-home" href="index.html">Inicio</a>
+              <a id="footer-link-calculator" href="calculadora.html">Calculadora</a>
+              <a id="footer-link-suppliers" href="proveedores.html">Proveedores</a>
+              <a id="footer-link-contact" href="#contacto">Contacto</a>
+
+              <h3 id="footer-contact-title">Contacto</h3>
+              <p id="footer-address">Av. San Carlos 1980, Huancayo</p>
+              <p id="footer-phone">(064) 481430</p>
+              <p id="footer-email">contacto@lighthouse.pe</p>
+
+              <p id="footer-copy">© 2025 Light House. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="usuario.js"></script>
+</body>
+</html>
